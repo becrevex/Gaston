@@ -11,9 +11,9 @@ parser.add_argument('hostname', type=str, action='store')
 parser.add_argument('port', type=int, action='store', nargs='?', default=443)
 args = parser.parse_args()
 
-print '=' * 80
+print '=' * 40
 print 'Gaston : A SSL/TLS BEAST (CVE-20013389) Vulnerability Checker'
-print '=' * 80 + '\n'
+print '=' * 40 + '\n'
 init 
 print 'Target: %s:%d' % (args.hostname, args.port)
 s = socket.socket()
